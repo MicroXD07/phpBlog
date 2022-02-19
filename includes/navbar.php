@@ -1,7 +1,7 @@
-        <!-- Navigation-->
+     
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
             <div class="container">    
-                <a class="navbar-brand" href="#page-top">PHP & MySQL Blog</a>  
+                <a class="navbar-brand" href="#page-top">PHP2 & MySQL Blog</a>    
                 <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     Menu
                     <i class="fas fa-bars"></i>
@@ -16,8 +16,7 @@
 
                     <?php if (isset($_SESSION['user_id'])) : ?> 
                        
-                            <!-- Nav Item - User Information -->                     
-                            <div class="nav-item dropdown no-arrow border border-primary">
+                        <div class="nav-item dropdown no-arrow border border-primary">
                                 <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <span class="mr-2 d-none d-lg-inline text-gray-600 small"><?=$_SESSION['user']['Email']?> </span>
@@ -31,7 +30,7 @@
                                     <img class="img-profile rounded" style="width:20px; height:20px;" src="<?php echo $avatarUrl ?>"> 
                                 </a>
                                  
-                                <!-- Dropdown - User Information -->
+                         
                                 <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in"
                                     aria-labelledby="userDropdown">
        
@@ -53,22 +52,19 @@
                                     </a>
                                 </div>
                             </div>
-                                    
-
-
                     <?php endif ; ?>
+
                     <?php if (!isset($_SESSION['user_id'])) : ?>
                         <ul class="navbar-nav ml-auto"> 
                        
-                                    <a class=" dropdown-toggle" href="./login" id="alertsDropdown" role="button"
-                                        aria-haspopup="true" aria-expanded="false">
-                                        <i class="fas fa-sign-in-alt mr-1"></i>
-                                        <!-- Counter - Alerts -->
-                                        Login
-                                    </a>
-                                    </li>
+                              <a class=" dropdown-toggle" href="./login" id="alertsDropdown" role="button"
+                                  aria-haspopup="true" aria-expanded="false">
+                                  <i class="fas fa-sign-in-alt mr-1"></i>Login
+                              </a>
+                                   
                         </ul>
                     <?php endif ; ?>
+                    
                 </div>
             </div>
         </nav>

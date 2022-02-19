@@ -46,3 +46,11 @@ window.addEventListener('DOMContentLoaded', event => {
 
 });
 
+$(document).ready(function () {
+    $(document).click(function (event) {
+        var clickover = $(event.target);
+        var _opened = $(".navbar-collapse").hasClass("in");
+        if (!$(event.target).closest('.navbar').length && _opened === true && !clickover.hasClass("navbar-toggle")) {
+            $(".navbar-collapse").collapse('toggle');
+        }
+    })});

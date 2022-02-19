@@ -3554,7 +3554,7 @@ textarea.form-control-lg {
   margin-left: 0;
 }
 
-.dropdown:hover .dropdown-menu {
+.dropdown-menu {
   position: absolute;
   z-index: 1000;
   display: none;
@@ -5987,49 +5987,9 @@ textarea.form-control-lg {
   color: #212529;
 }
 
-
-
-#wrapper {
-  display: flex;
-}
-
-#wrapper #content-wrapper {
-  background-color: #f8f9fc;
-  width: 100%;
-  overflow-x: hidden;
-}
-
-#wrapper #content-wrapper #content {
-  flex: 1 0 auto;
-}
-
-
-.card-columns .card { 
-  margin-bottom: 0.75rem;
-}
-
-@media (min-width: 576px) {
-  .card-columns {
-    -moz-column-count: 3;
-    column-count: 3;
-    -moz-column-gap: 1.25rem;
-    column-gap: 1.25rem;
-    orphans: 1;
-    widows: 1;
-  }
-  .card-columns .card {
-    display: inline-block;
-    width: 100%;
-  }
-}
-
-
-
 .carousel {
-  position: absolute;
-  
-  
-} 
+  position: relative;
+}
 
 .carousel.pointer-event {
   touch-action: pan-y;
@@ -11470,14 +11430,6 @@ html {
   color: #6c757d;
 }
 
-.post-header {
-  padding-top: 60px;
-  padding-bottom: 6rem; 
-}
-.heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
-}
 .masthead {
   padding-top: calc(6rem + 74px);
   padding-bottom: 6rem;
