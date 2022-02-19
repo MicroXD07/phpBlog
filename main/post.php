@@ -14,7 +14,7 @@
         
     }
 }
-?> 
+?>  
 
 <?php if (isset($_GET['addPost'])) {
   $header = 'Add Post';
