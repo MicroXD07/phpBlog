@@ -1,10 +1,10 @@
 <?php
 //Get Heroku ClearDB connection information
 $cleardb_url = parse_url(getenv("CLEARDB_DATABASE_URL"));
-$cleardb_server = $cleardb_url["eu-cdbr-west-02.cleardb.net"];
-$cleardb_username = $cleardb_url["bbfd1f46bd72c5"];
-$cleardb_password = $cleardb_url["92f4f87b"];
-$cleardb_db = substr($cleardb_url["blog"],1);
+$cleardb_server = $cleardb_url["host"];
+$cleardb_username = $cleardb_url["user"];
+$cleardb_password = $cleardb_url["pass"];
+$cleardb_db = substr($cleardb_url["path"],1);
 $active_group = 'default';
 $query_builder = TRUE;
 // Connect to DB
