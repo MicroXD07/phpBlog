@@ -59,7 +59,7 @@ if (isset($_GET['addPost']) || isset($_GET['editPost'])) {
 
 
 
-  <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+ 
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
   <!-- Bootstrap core JS-->
