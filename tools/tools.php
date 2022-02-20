@@ -4,7 +4,7 @@ function _log($string) {
 }
 
 function sql_connect(){
-    $conn = mysqli_connect('eu-cdbr-west-02.cleardb.net', 'bbfd1f46bd72c5', '92f4f87b', 'blog');
+    $conn = mysqli_connect('eu-cdbr-west-02.cleardb.net', 'bbfd1f46bd72c5', '92f4f87b', 'heroku_6b25255a35775d9?reconnect=true');
     //display error if u cant connect to sql server
     // _log(gettype(['a' => 'string']));
     // _log(gettype($conn));

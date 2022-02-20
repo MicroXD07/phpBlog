@@ -21,7 +21,7 @@ $conn = mysqli_connect($cleardb_server, $cleardb_username, $cleardb_password, $c
 if (isset($_GET['addPost']) || isset($_GET['editPost'])) {
     if (!isset($_SESSION['user_id'])){
         session_destroy();
-        header('location: ./login.php');
+        header('location: ./login');
     }
 }
 ?>

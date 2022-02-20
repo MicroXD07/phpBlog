@@ -27,7 +27,7 @@
          <h1 class="page-section-heading text-center text-uppercase text-secondary mb-0"> <?php echo $header ?> </h1>
        </div>
        
-       <a href="./blog.php" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mt-4 ">
+       <a href="./blog" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm mt-4 ">
        <i class="fas fa-arrow-left fa-sm text-white-50"></i>Back</a>
 
         <form action="" method="POST"> 
