@@ -5,7 +5,7 @@
 if (isset($_GET['addPost']) || isset($_GET['editPost'])) {
     if (!isset($_SESSION['user_id'])){
         session_destroy();
-        header('location: ./login');
+        header('location: ./login.php');
     }
 }
 ?>

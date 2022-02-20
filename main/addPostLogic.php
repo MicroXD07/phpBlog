@@ -31,7 +31,7 @@ if( isset($_POST['add_post']) ){
           if( $result && mysqli_affected_rows($link) > 0 ){  
             unset($_POST);
             setcookie('SuccessAlert',"Your post was successfully save");
-            header('location: ./blog');
+            header('location: ./blog.php');
             }
             else{
                 echo mysqli_error($link);
